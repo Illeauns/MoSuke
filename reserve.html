@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/84aad30eac.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Mosuke</title>
+    </head>
+<body>
+    <header>
+        <div class="navbar flex-container">
+            <div class="logo"><a href="index.html"><img src="assets/illustrations/logo.png" alt="mosuke-logo"></a></div>
+            <ul class="nav-menu" data-visible="false">
+                <li class="nav-link"><a href="lechef.html" class="hover-underline-animation" href="">Le Chef</a></li>
+                <li class="nav-link"><a href="dining.html" class="hover-underline-animation">Dining</a></li>
+                <li class="nav-link"><a href="faq.html" class="hover-underline-animation">FAQ</a></li>
+                <li class="nav-link"><a class="hover-underline-animation" href="reserve.html">Reserve</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+        <div id="reservation">
+            <h1>MoSuke</h1>
+            <p>Welcome to MOSUKE restaurant,
+                We would like to thank you for your interest in our restaurant.
+                For information, you can find all the availabilities on our website until the end of September. Reservations for the month of October will open on August 1st. The "Contact" email address does not take reservations.
+                The MoSuke team</p>
+
+            <div class="form-field">
+                <select name="number-of-guests" id="no-of-guests">
+                    <option value="">1 guest</option>
+                    <option value="">2 guests</option>
+                    <option value="">3 guests</option>
+                    <option value="">4 guests</option>
+                    <option value="">5 guests</option>
+                    <option value="">6 guests</option>
+                </select>
+                <input type="date">
+            </div>
+
+            <div class="schedule">
+                
+            </div>
+        
+        </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="item-1"><img src="assets/illustrations/michelin-star.png" alt=""></div>
+        <div class="item-2"><div class="brand">
+            <h2>Mosuke</h2>
+        </div>
+        <div>
+            <p>11 Rue Raymond Losserand <br>
+                75014 Paris</p>
+        </div></div>  
+        <div class="item-3">
+            <div>
+                <p>Follow our Newsletter</p>
+                <form>
+                    <label for="email"></label><br>
+                    <input type="text" placeholder="Email Address"><br>
+                    <a href="">Subscribe</a>
+                  </form>
+            </div>
+        </div>
+        <div class="item-4"><p> © 2023 | Mosuke</p></div>
+        <div class="item-5">
+            <div class="social-item">
+                <a href="#"><img src="assets/utilities/facebook.svg"/></a>
+                <a href="#"><img src="assets/utilities/instagram.svg" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
