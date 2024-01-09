@@ -1,48 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: 'Kaisei Decol', sans-serif; */
 }
-body{
+
+body {
     background-color: #433426;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.flower1, .flower2{
+
+.flower1,
+.flower2 {
     position: absolute;
 }
-.flower1{
+
+.flower1 {
     width: 4vw;
     height: 5vw;
 }
-.flower2{
+
+.flower2 {
     width: 6.5vw;
     height: 6.5vw;
 }
-.mobile-nav-toggle{
+
+.mobile-nav-toggle {
     display: none;
 }
-.page-title{
+
+.page-title {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5vw;
     margin-bottom: 60px;
 }
-.flex-container{
+
+.flex-container {
     display: flex;
     align-items: center;
 }
 
-#hero{
-    min-height: 80vh;
+#hero {
+    height: 80vh;
     background-image: url('assets/images/hero.jpeg');
     background-size: cover;
     background-position: 60% 40%;
 }
 
 /* navbar */
-.navbar{
+.navbar {
     max-width: 100%;
     min-height: 60px;
     margin: 0 auto;
@@ -50,25 +59,31 @@ a{
     justify-content: space-between;
     font-family: 'Quicksand', sans-serif;
 }
-.nav-link{
+
+.nav-link {
     font-size: 1.3rem;
 }
-.logo img{
-   width: 141px;
+
+.logo img {
+    width: 141px;
 }
-li{
+
+li {
     list-style: none;
 }
-.navbar .nav-menu{
+
+.navbar .nav-menu {
     display: flex;
     color: #F5EBD9;
     gap: 2rem;
 }
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;
     color: #F5EBD9;
 }
+
 .hover-underline-animation:after {
     content: '';
     position: absolute;
@@ -81,96 +96,115 @@ li{
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
+
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 #dining-header .hover-underline-animation {
     color: #433426;
 }
+
 #dining-header .hover-underline-animation:after {
     background-color: #433426;
 }
-header{
+
+header {
     position: relative;
     padding: 0 2rem;
 }
 
 /* introduction */
-#intro{
+#intro {
     width: 100%;
-    
 }
-#introduction{
+
+#introduction {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
     position: relative;
     padding: 80px;
 }
-#introduction .col-left{
+
+#introduction .col-left {
     width: 50%;
 }
-#introduction .col-left .brand-logo{
-    max-width: 60%;
+
+#introduction .col-left .brand-logo {
+    max-width: 45%;
     height: auto;
 }
-#introduction .col-right{
+
+#introduction .col-right {
     color: #F5EBD9;
     text-align: center;
     font-family: 'Kaisei Decol', sans-serif;
     width: 50%;
     padding: 100px;
 }
-#introduction .col-right p{
+
+#introduction .col-right p {
     font-size: 2.5vw;
     line-height: 1.5;
 }
-#introduction .col-right a{
+
+#introduction .col-right a {
     margin-top: 60px;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.7vw;
 }
-#introduction .flower1{
+
+#introduction .flower1 {
+    width: 3rem;
+    height: 4rem;
     top: 0;
     right: 2em;
     transform: rotate(180deg);
 }
-#introduction .flower2{
+
+#introduction .flower2 {
     bottom: 0;
     left: 2em;
 }
 
 /* description */
-#description{
+#description {
     display: flex;
     flex-direction: row;
     background-color: #F5EBD9;
 }
-#description .col-left{
+
+#description .col-left {
     font-family: 'Kaisei Decol', sans-serif;
     color: #433426;
     width: 50%;
     text-align: center;
     padding: 120px 80px;
 }
-#description .col-left h1{
+
+#description .col-left h1 {
     font-size: 1.8vw;
     padding: 15px 0;
     line-height: 1.8;
 }
-#description .col-left p{
+
+#description .col-left p {
     font-size: 1.5vw;
     padding: 10px 0;
 }
-#description .col-right{
-    width: 50%; 
+
+#description .col-right {
+    width: 50%;
     background-image: url(assets/images/plates.jpeg);
     background-position: center;
+    background-repeat: no-repeat;
+    /* object-fit: contain; */
 }
 
 /* footer */
-#footer{
+#footer {
     padding: 50px 100px 30px 100px;
     display: grid;
     grid-template-rows: 4fr 1fr;
@@ -179,37 +213,51 @@ header{
     font-family: 'Quicksand', sans-serif;
     background-color: #4F4135;
 }
-#footer .item-2 h2, p{
+
+#footer .item-2 h2,
+p {
     line-height: 1.7;
 }
-#footer .item-1{
+
+#footer .item-1 {
     justify-content: start;
 }
-#footer .item-2{
+
+.item-1 img {
+    width: 80px;
+}
+
+#footer .item-2 {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
-#footer .item-2 h2{
+
+#footer .item-2 h2 {
     font-size: 1.5vw;
     font-weight: 500;
 }
-#footer .item-2 p{
+
+#footer .item-2 p {
     font-size: 1.2vw;
 }
-#footer .item-3{
+
+#footer .item-3 {
     justify-content: end;
 }
-#footer .item-3 h2{
+
+#footer .item-3 h2 {
     font-size: 1.3vw;
     padding-bottom: 10px;
     font-weight: 500;
 }
-#footer .item-3 form{
+
+#footer .item-3 form {
     display: flex;
 }
-#footer .item-3 form input{
+
+#footer .item-3 form input {
     border-width: 0px;
     width: 375px;
     background-color: #4F4135;
@@ -217,114 +265,142 @@ header{
     border-radius: 5px 5px 0 0;
     font-size: 1.2vw;
 }
-#footer .item-3 form a{
+
+#footer .item-3 form a {
     color: #F5EBD9;
     border-bottom: 1px solid #F5EBD9;
     font-size: 1.2vw;
 }
-#footer .item-4{
+
+#footer .item-4 {
     grid-area: 2 / 1 / 3 / 3;
 }
-#footer .item-4 p{
+
+#footer .item-4 p {
     font-size: 1.2vw;
 }
-#footer .item-5{
+
+#footer .item-5 {
     grid-area: 2 / 3 / 3 / 4;
     justify-self: end;
 }
-#footer .item-5 img{
-    padding-left: 10px; 
+
+#footer .item-5 img {
+    padding-left: 10px;
 }
 
 /* le chef */
-#lechef{
+#lechef {
     text-align: center;
     color: #F5EBD9;
     width: 50%;
-    margin: 100px auto;
+    margin: 0 auto;
     flex-direction: column;
+    padding: 7rem 0;
 }
-#lechef .intro{
+
+#lechef .intro {
     font-family: 'Kaisei Decol', sans-serif;
     font-size: 3.5vw;
     line-height: 1.4;
 }
-#lechef .profile{
+
+#lechef .profile {
     margin: 70px 0;
 }
-#lechef p{
-   font-family: 'Kaisei Decol', sans-serif;
-   font-size: 1.8vw;
-   line-height: 1.5;
-   margin-bottom: 30px;
+
+#lechef p {
+    font-family: 'Kaisei Decol', sans-serif;
+    font-size: 1.8vw;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
-#lechef .credentials{
+
+#lechef .credentials {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.5;
     font-size: 1.8vw;
 }
-#lechef .flower1{
+
+#lechef .flower1 {
     left: 0;
     transform: rotate(90deg);
     top: 90%;
 }
-#lechef .flower2{
+
+#lechef .flower2 {
     right: 0;
     transform: rotate(270deg);
-    bottom: -100%;
 }
 
 /* faq */
-.faq{
+.faq {
     text-align: center;
     color: #F5EBD9;
-    max-width: 750px;
+    width: 80%;
     margin: 100px auto;
     font-size: 2vw;
+    padding: 7rem 0;
 }
-.faq .page-title{
-    margin-bottom: 70px;
+
+.faq .page-title {
+    margin-bottom: 150px;
 }
-.faq .question{
+
+.faq .question {
     font-family: 'Kaisei Decol', sans-serif;
     margin-top: 70px;
 }
-.faq .answer{
+
+.faq .answer {
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 70px;
     font-size: 1.6vw;
 }
-.faq a{
+
+.faq a {
     color: #F5EBD9;
     text-decoration: underline;
 }
-    
+
 /* dining-page */
-#dining-header{
+#dining-header {
     background: #F5EBD9;
 }
-#dining-header .links a{
+
+#dining-header .links a {
     /* background: #F5EBD9; */
     color: #433426;
 }
-#dining-intro, #dining-outro{
+
+.dining-intro,
+#dining-outro {
     font-family: 'Kaisei Decol', sans-serif;
     color: #433426;
     text-align: center;
-    padding: 30px 0;
+    padding: 6rem 0;
 }
-#dining-intro .flex-container, #dining-outro .flex-container{
+
+.dining-intro .flex-container,
+#dining-outro .flex-container {
     flex-direction: column;
 }
-#dining-intro p, #dining-outro p{
+
+.dining-intro p,
+#dining-outro p {
     font-size: 2.2vw;
     margin-bottom: 20px;
     width: 60%;
 }
-#dining-outro, #dining-intro, #pricing .col-left{
+
+#dining-outro,
+.dining-intro,
+#pricing .col-left {
     background-color: #F5EBD9;
 }
-#dining-intro a, #dining-outro a{
+
+.dining-intro a,
+#dining-outro a {
     font-size: 1.3vw;
     font-weight: 700;
     font-family: 'Quicksand', sans-serif;
@@ -333,99 +409,211 @@ header{
     border-radius: 10px;
     padding: 16px 26px;
 }
-#dining-intro a:hover, #dining-outro a:hover{
+
+.dining-intro a:hover,
+#dining-outro a:hover {
     background: #433426;
     color: #F5EBD9;
 }
-.dining{
+
+.dining {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background: url(assets/images/dining1.jpeg) no-repeat 100% 40%;
     background-size: cover;
 }
-#pricing{
+
+/* end dining page */
+#pricing .col-left p,
+#pricing .col-left h3,
+#pricing .col-right p,
+#pricing .col-right h3 {
+    font-size: 1.5vw;
+    line-height: 2.4;
+}
+
+#pricing .col-left p,
+#pricing .col-right p {
+    margin-top: 10px;
+}
+
+#pricing {
     display: flex;
     flex-direction: row;
 }
-#pricing .col-left{
+
+#pricing .col-left {
     color: #433426;
 }
-#pricing .col-right h3, #pricing .col-left h3{
+
+#pricing .col-right h3,
+#pricing .col-left h3 {
     font-family: 'Kaisei Decol', sans-serif;
 }
-#pricing .col-right p, #pricing .col-left p{
+
+#pricing .col-right p,
+#pricing .col-left p {
     width: 70%;
 }
-#pricing .col-right, #pricing .col-left{
+
+#pricing .col-right,
+#pricing .col-left {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     width: 50%;
     padding: 80px 0;
 }
-#pricing .col-left .flex-container, #pricing .col-right .flex-container{
+
+#pricing .col-left .flex-container,
+#pricing .col-right .flex-container {
     flex-direction: column;
 }
-#pricing .col-right{
+
+#pricing .col-right {
     color: #F5EBD9;
 }
-#pricing .price{
+
+#pricing .price {
     font-weight: bold;
 }
-.dining2{
-    height: 90vh;
+
+.dining2 {
+    height: 60vh;
     background: url(assets/images/dining2.webp) no-repeat 100% 40%;
     background-size: cover;
 }
-#dining-outro p{
+
+#dining-outro p {
     font-size: 2.2vw;
     margin-bottom: 20px;
     padding: 50px 0;
 }
 
 /* reserve */
-#reservation{
-    background-color: #F5EBD9;
-    color: #433426;
-    text-align: center;
-    width: 50%;
-    margin: 100px auto;
-    border-radius: 10px;
-    padding: 30px;
-}
-#reservation .form-field{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-#reservation p{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2vw;
-}
-#reservation h1{
-    font-size: 1.5vw;
-}
-#reservation h1, p{
-    padding-bottom: 15px;
-}
-#reservation select, input{
-    width: 14em;
-    font-size: .7em;
-    background-color: #E4C489;
-    padding: 5px;
-    border: 1px solid #E4C489;
-    border-radius: 5px;
-    color: #433426;
-}
-#reservation .schedule{
-    background-color: #fff;
-    height: 500px;
+#reservation {
+    background: #F5EBD9;
 }
 
-.hamburger{
+.reservation {
+    /* margin-top: 100px; */
+    padding: 10rem 0 15rem;
+    position: relative;
+}
+
+.reservation-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation-header img {
+    width: 80px;
+}
+
+.reservation-header h1 {
+    font-size: 25px;
+    color: #4F4135;
+}
+
+.reservation .p1,
+.reservation .p2 {
+    width: 40%;
+    text-align: center;
+    line-height: 1.6;
+    color: #4F4135;
+}
+
+.reservation .p1 {
+    font-size: 26px;
+    font-family: 'Kaisei Decol', sans-serif;
+}
+
+.reservation .p2 {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.inputs {
+    width: 40%;
+    margin: 100px auto;
+    border: none;
+    justify-content: center;
+}
+
+.inputs .col-left,
+.inputs .col-right {
+    width: 50%;
+}
+
+.inputs .col-left {
+    margin-right: 100px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    color: #4F4135;
+}
+
+.input-group label {
+    font-size: 18px;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: 2px solid #4F4135;
+    background: #F5EBD9;
+    line-height: 5;
+    margin-bottom: 30px;
+    color: #433426;
+    font-size: 18px;
+}
+
+.input-group input::placeholder {
+    color: #433426;
+    opacity: 50%;
+}
+
+.reservation-submit {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    color: #433426;
+    border: 2px solid #433426;
+    padding: 15px 25px;
+    border-radius: 20px;
+    position: absolute;
+    left: 44%;
+}
+
+.reservation .flower1 {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
+
+.reservation .flower2 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+}
+
+.flower1,
+.flower2 {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.hamburger {
     display: none;
     cursor: pointer;
 }
-.bar{
+
+.bar {
     display: block;
     width: 22px;
     height: 2px;
@@ -437,22 +625,27 @@ header{
 }
 
 /* media queries mobile */
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 700px) {
+
     /* hamburger menu */
-    .hamburger{
+    .hamburger {
         display: block;
         z-index: 9999;
     }
-    .hamburger.active .bar:nth-child(2){
+
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
-    .navbar .nav-menu{
+
+    .navbar .nav-menu {
         display: flex;
         justify-content: center;
         position: fixed;
@@ -469,279 +662,397 @@ header{
         font-size: 1rem;
         transition: 0.7s;
     }
-    .nav-menu.active{
+
+    .nav-menu.active {
         left: -100%;
     }
-    #dining-header .bar{
+
+    #dining-header .bar {
         background-color: #433426;
     }
-    #dining-header .nav-link a{
+
+    #dining-header .nav-link a {
         color: #F5EBD9;
     }
 
 
-    .logo img{
+    .logo img {
         width: 100px;
-     }
-    .page-title{
-        font-size: .6rem;
+    }
+
+    .page-title {
+        font-size: 1rem;
         margin-bottom: 30px;
     }
-    
+
+    #hero {
+        height: 30vh;
+    }
+
     /* introduction */
-    #introduction{
+    #introduction {
         padding: 50px;
     }
-    #introduction .flex-container{
+
+    #introduction .flex-container {
         flex-direction: column;
     }
-    #introduction .col-left, #introduction .col-right{
+
+    #introduction .col-left,
+    #introduction .col-right {
         width: 100%;
     }
-    #introduction .brand-logo{
+
+    #introduction .brand-logo {
         width: 100px;
     }
+
     #introduction .col-right {
         padding: 0;
     }
-    #introduction .col-right p{
+
+    #introduction .col-right p {
         font-size: 19px;
         padding-top: 30px;
     }
-    #introduction .col-right a{
+
+    #introduction .col-right a {
         font-size: 15px;
     }
-    
+
 
     /* description */
-    #description{
+    #description {
         display: block;
         font-size: 20px;
         padding: 0;
     }
-    #description .icon{
+
+    #description .icon {
         width: 40px;
     }
-    #description .col-left{
+
+    #description .col-left {
         width: 100%;
         padding: 50px;
     }
-    #description .col-left h1{
+
+    #description .col-left h1 {
         font-size: .7rem;
         padding: 15px 0;
         line-height: 1.8;
         margin-top: 20px;
     }
-    #description .col-left p{
+
+    #description .col-left p {
         font-size: .6rem;
         padding: 10px 0;
     }
-    #description .col-right{
-        width: 100%; 
+
+    #description .col-right {
+        width: 100%;
         height: 60vh;
     }
-    
+
 
     /* footer */
-    #footer{
+    #footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0;
     }
-    #footer .item-1 img{
+
+    #footer .item-1 img {
         width: 30px;
         padding: 30px 0;
     }
-    #footer .item-2{
+
+    #footer .item-2 {
         text-align: center;
         align-items: center;
         font-size: 20px;
     }
-    #footer .item-2 h2, #footer .item-3 h2{
+
+    #footer .item-2 h2,
+    #footer .item-3 h2 {
         font-size: 18px;
     }
-    #footer .item-2 p{
+
+    #footer .item-2 p {
         font-size: 15px;
     }
-    #footer .item-3 h2{
+
+    #footer .item-3 h2 {
         font-size: 16px;
         margin-top: 30px;
         text-align: center;
     }
-    #footer .item-3 form input{
+
+    #footer .item-3 form input {
         width: 70%;
         font-size: 15px;
     }
-    #footer .item-3 form a{
+
+    #footer .item-3 form a {
         font-size: 14px;
         padding-top: 4px;
     }
-    #footer .item-4 p{
+
+    #footer .item-4 p {
         font-size: 10px;
     }
-    #footer .item-5 a img{
+
+    #footer .item-5 a img {
         width: 14px;
         padding: 20px 0;
     }
-    
+
 
     /* lechef */
-    #lechef{
+    #lechef {
         margin: 0 auto;
         width: 90%;
-        padding: 20px;
+        padding: 6rem 0;
     }
-    #lechef .profile{
+
+    #lechef .profile {
         margin: 40px 0;
-        width: 300px;
+        width: 350px;
     }
-    #lechef .icon{
-        width: 30px;
+
+    #lechef .icon {
+        width: 50px;
         margin-top: 10px;
     }
-    #lechef p, #lechef .intro{
-        font-size: .8rem;
+
+    #lechef p,
+    #lechef .intro {
+        font-size: 1rem;
         line-height: 1.6;
     }
-    #lechef .credentials{
-        font-size: .6rem;
+
+    #lechef .credentials {
+        font-size: .9rem;
         line-height: 2;
     }
-    .flower1{
+
+    .flower1 {
         width: 2em;
         height: 2em;
     }
-    .flower2{
+
+    .flower2 {
         width: 3em;
         height: 2.4em;
     }
-    #lechef .flower1{
+
+    #lechef .flower1 {
         left: 0;
         transform: rotate(90deg);
         top: 50%;
     }
-    #lechef .flower2{
+
+    #lechef .flower2 {
         right: 0;
         transform: rotate(270deg);
-        bottom: -70%;
     }
 
     /* dining-page */
-    #dining-header .links a{
+    #dining-header .links a {
         background: none;
         color: #F5EBD9;
     }
-    #dining-intro, #dining-outro{
+
+    .dining-intro,
+    #dining-outro {
         padding: 60px 0;
     }
-    #dining-intro img{
+
+    .dining-intro img {
         width: 50px;
     }
-    #dining-intro p, #dining-outro p{
-        font-size: .8rem;
+
+    .dining-intro p,
+    #dining-outro p {
+        font-size: 1rem;
         width: 80%;
         line-height: 2;
         padding-bottom: 20px;
     }
-    #dining-intro a, #dining-outro a{
-        font-size: .5rem;
+
+    .dining-intro a,
+    #dining-outro a {
+        font-size: .8rem;
         padding: 12px 18px;
     }
-    .dining, .dining2{
-        height: 50vh;
-    }
-    #pricing{
-        display: flex;
-        flex-direction: column;
-    }
-    #pricing .col-left, #pricing .col-right{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    #pricing .col-left, .col-right{
-        font-size: .7rem;
-    }
-    #pricing .col-right h3, #pricing .col-left h3{
-        font-family: 'Kaisei Decol', sans-serif;
+
+    .dining,
+    .dining2 {
+        height: 30vh;
     }
 
-    
-    .faq{
+    #pricing .col-left p,
+    #pricing .col-left h3,
+    #pricing .col-right p,
+    #pricing .col-right h3 {
+        font-size: .9rem;
+        line-height: 2.4;
+    }
+
+    #pricing .col-left p,
+    #pricing .col-right p {
+        margin-top: 10px;
+    }
+
+    #pricing {
+        flex-direction: column;
+    }
+
+    #pricing .col-left,
+    #pricing .col-right {
+        width: 100%;
+    }
+
+    .faq {
         margin: 30px auto;
         width: 80%;
     }
-    .faq .page-title{
-        font-size: .6rem;
-        margin-bottom: 70px;
-    }
-    .faq h1{
-        font-size: .8rem;
-    }
-    .faq .flower{
+
+    .faq .flower {
         width: 60px;
     }
-    .faq .question{
-        font-size: .7rem;
+
+    .faq .question p {
+        font-size: 1rem;
         margin: 30px 0 0 0;
     }
-    .faq .answer{
-        font-size: .6rem;
-        margin-bottom: 30px;
+
+    .faq .answer p {
+        font-size: .9rem;
+        margin-bottom: 10px;
     }
-    .faq a{
+
+    .faq a {
         color: #F5EBD9;
         text-decoration: underline;
     }
 
     /* reserve */
-    #reservation{
-        width: 90%;
-        margin: 80px auto;
+    .reservation {
+        padding: 7rem 0;
+        position: relative;
     }
-    #reservation p{
-        font-size: 14px;
+
+    .reservation-header img {
+        width: 50px;
     }
-    #reservation h1{
-        font-size: 20px;
+
+    .reservation-header .page-title {
+        font-size: 1rem;
     }
-    #reservation .schedule{
-        background-color: #fff;
-        height: 200px;
+
+    .reservation .p1,
+    .reservation .p2 {
+        width: 80%;
+        line-height: 1.6;
     }
-    #reservation .form-field{
-        display: inline;
+
+    .reservation .p1 {
+        font-size: 1rem;
     }
-    #reservation .form-field select, input{
-        width: 90%;
+
+    .reservation .p2 {
+        font-size: .9rem;
     }
-    #reservation .form-field select{
-        margin-bottom: 10px;
+
+    .inputs {
+        margin: 70px auto;
+        flex-direction: column;
+        width: 60%;
     }
-    #reservation .form-field input{
-        margin-bottom: 20px;
-        padding: 7px;
+
+    .inputs .col-left,
+    .inputs .col-right {
+        width: 100%;
+    }
+
+    .inputs .col-left {
+        margin-right: 0;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .input-group label {
+        font-size: 1rem;
+    }
+
+    .input-group input {
+        line-height: 3;
+        margin-bottom: 30px;
+        color: #433426;
+        font-size: 10px;
+    }
+
+    .input-group input::placeholder {
+        color: #433426;
+        opacity: 50%;
+        font-size: .8rem;
+    }
+
+    .reservation-submit {
+        font-size: .8rem;
+        font-family: 'Quicksand', sans-serif;
+        color: #433426;
+        border: 2px solid #433426;
+        left: 35%;
+        bottom: 100px;
+    }
+
+    .reservation .flower1 {
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+    }
+
+    .reservation .flower2 {
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+    }
+
+    .flower1,
+    .flower2 {
+        width: 50px;
+        height: 50px;
     }
 }
 
 /* media queries tablet */
-@media only screen and (max-width: 768px){
-    .hamburger{
+@media only screen and (max-width: 768px) {
+    .hamburger {
         display: block;
         z-index: 9999;
     }
-    .hamburger.active .bar:nth-child(2){
+
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
-    .navbar .nav-menu{
+
+    .navbar .nav-menu {
         display: flex;
         justify-content: center;
         position: fixed;
@@ -758,133 +1069,167 @@ header{
         font-size: 1rem;
         transition: 0.7s;
     }
-    .nav-link{
+
+    .nav-link {
         margin-bottom: 20px;
     }
-    .nav-menu.active{
+
+    .nav-menu.active {
         left: -100%;
     }
 
-    #introduction{
+    #introduction {
         padding: 50px;
     }
-    #introduction .flex-container{
+
+    #introduction .flex-container {
         flex-direction: column;
     }
-    #introduction .col-left, #introduction .col-right{
+
+    #introduction .col-left,
+    #introduction .col-right {
         width: 100%;
     }
-    #introduction .brand-logo{
+
+    #introduction .brand-logo {
         width: 100px;
     }
+
     #introduction .col-right {
         padding: 0;
     }
-    #introduction .col-right p{
+
+    #introduction .col-right p {
         font-size: 19px;
         padding-top: 30px;
     }
-    #introduction .col-right a{
+
+    #introduction .col-right a {
         font-size: 15px;
     }
-    
+
+    #introduction .flower1 {
+        width: 2rem;
+        height: 2rem;
+    }
+
 
     /* description */
-    #description{
+    #description {
         display: block;
         font-size: 20px;
         padding: 0;
     }
-    #description .icon{
+
+    #description .icon {
         width: 40px;
     }
-    #description .col-left{
+
+    #description .col-left {
         width: 100%;
-        padding: 50px;
+        margin-top: 0;
     }
-    #description .col-left h1{
-        font-size: .7rem;
-        padding: 15px 0;
+
+    #description .col-left h1 {
+        font-size: 1rem;
         line-height: 1.8;
-        margin-top: 20px;
     }
-    #description .col-left p{
-        font-size: .6rem;
-        padding: 10px 0;
+
+    #description .col-left p {
+        font-size: .9rem;
     }
-    #description .col-right{
-        width: 100%; 
-        height: 60vh;
+
+    #description .col-right {
+        width: 100%;
     }
-    
-    #dining-header .bar{
+
+    /* end description */
+
+    /* dining */
+    #dining-header .bar {
         background-color: #433426;
     }
-    #dining-header .nav-link a{
+
+    #dining-header .nav-link a {
         color: #F5EBD9;
     }
-    #pricing{
-        display: flex;
-        flex-direction: column;
+
+    .faq {
+        width: 90%;
+        padding: 2rem 0;
     }
-    #pricing .col-left, #pricing .col-right{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+
+    .faq .page-title {
+        margin-bottom: 50px;
     }
-    #pricing .col-left, .col-right{
-        font-size: .7rem;
+
+    .faq .question {
+        margin-top: 0;
     }
-    #pricing .col-right h3, #pricing .col-left h3{
-        font-family: 'Kaisei Decol', sans-serif;
-    }
+
     .faq .answer {
         width: 80%;
         font-size: .7rem;
         margin: 0 auto;
     }
+
     .faq .question {
         font-size: .7rem;
     }
-    #footer{
+
+    .sun-beige {
+        width: 50px;
+    }
+
+    #footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0;
     }
-    #footer .item-1 img{
+
+    #footer .item-1 img {
         width: 30px;
         padding: 30px 0;
     }
-    #footer .item-2{
+
+    #footer .item-2 {
         text-align: center;
         align-items: center;
         font-size: 20px;
     }
-    #footer .item-2 h2, #footer .item-3 h2{
+
+    #footer .item-2 h2,
+    #footer .item-3 h2 {
         font-size: 18px;
     }
-    #footer .item-2 p{
+
+    #footer .item-2 p {
         font-size: 15px;
     }
-    #footer .item-3 h2{
+
+    #footer .item-3 h2 {
         font-size: 16px;
         margin-top: 30px;
         text-align: center;
     }
-    #footer .item-3 form input{
+
+    #footer .item-3 form input {
         width: 70%;
         font-size: 15px;
     }
-    #footer .item-3 form a{
+
+    #footer .item-3 form a {
         font-size: 14px;
         padding-top: 4px;
     }
-    #footer .item-4 p{
+
+    #footer .item-4 p {
         font-size: 10px;
     }
-    #footer .item-5 a img{
+
+    #footer .item-5 a img {
         width: 14px;
         padding: 20px 0;
     }
